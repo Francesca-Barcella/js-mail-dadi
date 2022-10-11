@@ -18,13 +18,23 @@ const playerName = prompt('Scrivi il tuo nome');
 const playerNamePc = 'Computer'
 
 // 1 - generare un numero random da 1 6 per il palyer1 (math.random);
-const player1 = Math.floor(Math.random() * 6 +1);
+const numberPlayer1 = Math.floor(Math.random() * 6 +1);
 // 2 - stampo la giocata del player1
 console.log(playerName);
-console.log(player1);
+console.log(numberPlayer1);
 
 // 3 - generare un numero random da 1 6 per il computer (math.random);
-const playerPc = Math.floor(Math.random() * 6 +1);
+const numberPc = Math.floor(Math.random() * 6 +1);
 // 4 - stampo la giocata del computer
 console.log(playerNamePc);
-console.log(playerPc);
+console.log(numberPc);
+
+// 5 - calcolare e stampare chi vince
+if (numberPlayer1 > numberPc){
+    console.log(playerName + ' hai vinto');
+} else if (numberPlayer1 < numberPc){
+    console.log(playerNamePc + ' hai vinto');
+} else {
+    console.log('pareggio');
+}
+
