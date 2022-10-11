@@ -24,9 +24,9 @@ const userMail = prompt('Inserisci il tuo indirizzo email');
  for (let i = 0; i < mailingList.length; i++) {
     const newsLetter = (mailingList[i]);
     //console.log('questo è il logo dentro al ciclo for', newsLetter);
-    if (userMail !== newsLetter){
-        console.log('Non sei ancora iscritto alla nostra newsletter');
-    } else {
+    if (userMail === newsLetter) {
         console.log('Sei già iscritto alla nostra newsletter');
+    } else {
+        console.log('Non sei ancora iscritto alla nostra newsletter');
     }
  }
