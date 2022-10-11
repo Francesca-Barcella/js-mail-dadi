@@ -13,20 +13,20 @@ const mailingList = [
     'mario.rossi@alice.it',
     'committa&pusha@boolean.careers'
 ]
-console.log(mailingList);
+//console.log(mailingList);
 
 //chiedere all'utente di inserire la sua mail (prompt)
 const userMail = prompt('Inserisci il tuo indirizzo email');
-console.log('la tua email è: ', userMail);
+//console.log('la tua email è: ', userMail);
 
 // creare ciclo for
 // controllare se l'indirizzo è nella lista e dare messaggio "sei iscritto alla nostra newsletter" (for + if);
  for (let i = 0; i < mailingList.length; i++) {
     const newsLetter = (mailingList[i]);
-    console.log('questo è il logo dentro al ciclo for', newsLetter);
-   /*  if (userMail === newsLetter){
-        console.log('Sei già iscritto alla nostra newsletter');
-    } else {
+    //console.log('questo è il logo dentro al ciclo for', newsLetter);
+    if (userMail !== newsLetter){
         console.log('Non sei ancora iscritto alla nostra newsletter');
-    } */
+    } else {
+        console.log('Sei già iscritto alla nostra newsletter');
+    }
  }
